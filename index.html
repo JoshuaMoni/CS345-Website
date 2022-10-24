@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel = "icon" href = "logonav.png">
+<title>Carbon Tiptoe</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="A2.css">
+
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+.fa-anchor,.fa-coffee {font-size:200px}
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="custom-background-color">
+  <div class="topnav">
+    <a class = "active" href="#home">Home</a>
+    
+    <a href="#" onclick="notImplementented()">Compare</a>
+    <a href="#" onclick="notImplementented()">Learn More</a>
+    <a href="#" onclick="notImplementented()">F&Q</a>
+    <a href="#" onclick="notImplementented()">About Us</a>
+    <div class = "nav-user">
+      <a href="#register" id = 'trigger-modal' onclick="displayModal()">Register</a>
+      <a href="#" onclick="notImplementented()">Login</a>
+    </div>
+    <div class="search-container">
+        <input type="text" placeholder="Search.." name="search">
+        <button onclick="notImplementented()"><i class="fa fa-search"></i></button>
+    </div>
+  </div>
+</div>
+<!-- Container -->
+<header class="bg-img" style="padding:110px 16px">
+  <!-- Text inside the image-->
+  <div class = centre id = "container" >
+    <h1 class="main-text texts"><b>Calculate your Carbon Footprint</b></h1>
+    <h3 class = "sub-main-text texts">Take the first step towards lowering your carbon footprint</h3>
+    <h5 class = "texts">Register or login to use the Carbon Footprint calculator</h5>
+
+    <button class = "register-button custom-background-color" id = 'trigger-modal' onclick="displayModal()"><font size = "+1">Register</font></button>
+  </div>
+
+  <!-- The Modal -->
+  <div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div id = "ct-form" class="modal-content">
+    <div class = "modal-header custom-background-color"> 
+      <span class="close">&times;</span>
+      <h2 id = "form-header">Registration Form</h2>
+    </div>
+    <form id = "userInfo">
+    
+    <div id = "userDetails">
+      <label>Given Name</label>
+      <input type="text" placeholder="e.g John"/><br>
+      <label>Surname</label>
+      <input type="text" placeholder="e.g Smith"/><br>
+      <label>Username</label>
+      <input type="text" placeholder="e.g JohnSmith123"/><br>
+      <label>Password</label>
+      <input type="password"/><br>
+    </div>
+
+    <br>
+    <br>
+    <div id = "addresses">
+      <label>Home Address</label>
+      <input type="text" placeholder="e.g 123 Abc Street"/><br>
+      <label>Work Address</label>
+      <input type="text" placeholder="e.g 20 Symonds Street"/><br>
+    </div>
+
+    <br>
+    <br>
+    <div id = "contacts">
+      <label>Mobile Number</label>
+      <input type="tel" placeholder="e.g 02112345678"/><br>
+      <label>Email</label>
+      <input type="email" placeholder="e.g example@gmail.com"/><br>
+    </div>
+  </form>
+<br>
+  <div>
+    <button class = 'submit-button custom-background-color' onclick="notImplementented()">Submit</button>
+  </div>
+  </div>
+
+</div>
+<!-- Displayed when the user clicks on something that has not been implemented-->
+<div id="incompleteModal" class="modal">
+  <div id = "incompleteModalBody" class="modal-content">
+    <p><font size = "+5">This feature has not been implemented</font></p>
+    <p><font size = "+2">Click anywhere outside this modal to close it</font></p>
+  </div>
+</div>
+</div>
+
+</header>
+
+
+<!-- First Grid -->
+<div class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-twothird">
+      <h1 class = custom-color-2><b>Carbon Tiptoe</b></h1>
+      <h5 class="w3-padding-32">Carbon Tiptoe is an online tool designed to help users calculate and understand their current carbon footprint as well as compare their results to other users. With the current threat of global warming, there is an ever larger emphasis on being aware and making self conscious decisions on the factors that contribute to our C02 emissions. Carbon Tiptoe offers an interactive survey for the user to complete, following the complete the user will have tailored results presented to them on useful changes that they can implement to improve their C02 emissions.
+      </h5>
+    </div>
+
+    <div class="w3-third w3-center logo">
+      <img src = "logo.png" alt = "Carbon Tiptoe logo">
+    </div>
+  </div>
+</div>
+
+<!-- Second Grid -->
+<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+  <div class="w3-content">
+
+    <div class="w3-twothird">
+      <h1 class = custom-color-2><b>Why Carbon Tiptoe?</b></h1>
+      <h5 class="w3-padding-32">As well as supplying tailored and specific results, Carbon Tiptoe offers users the ability to compare their carbon footprint to others. This involves global users as well as those in the local area. This further allows the user to understand their impact on those around them as well as allowing the user to create local movements if they see fit.</h5>
+
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity">  
+  <div class="w3-xlarge w3-padding-32">
+    <i class="fa fa-facebook-official w3-hover-opacity" onclick="notImplementented()"></i>
+    <i class="fa fa-instagram w3-hover-opacity" onclick="notImplementented()"></i>
+    <i class="fa fa-snapchat w3-hover-opacity" onclick="notImplementented()"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity" onclick="notImplementented()"></i>
+    <i class="fa fa-twitter w3-hover-opacity" onclick="notImplementented()"></i>
+    <i class="fa fa-linkedin w3-hover-opacity" onclick="notImplementented()"></i>
+ </div>
+</footer>
+
+</body>
+<script src="scripts.js"></script>
+</html>
